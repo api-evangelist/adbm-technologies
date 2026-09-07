@@ -1,0 +1,15 @@
+generated: '2026-09-07'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: adbmtech.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Nov 27 17:30:37 2026 GMT
+  hsts: false
+domains:
+- domain: adbmtech.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false

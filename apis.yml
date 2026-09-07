@@ -1,7 +1,15 @@
 aid: adbm-technologies
 name: AdBm Technologies
-description: 'AdBm Technologies is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'AdBm Technologies is an Austin, Texas acoustical engineering company that
+  designs and manufactures near-pile underwater noise mitigation systems for offshore
+  wind construction. Its injection-molded HDPE Helmholtz resonators, mounted on an expandable
+  steel framework and paired with an integrated bubble curtain, absorb and disperse the
+  low-frequency sound energy generated during pile driving so contractors can meet
+  underwater noise regulations while protecting marine life. The technology grew out of
+  more than a decade of research at the University of Texas at Austin Applied Research
+  Laboratories and has been deployed on offshore wind projects from the North Sea to the
+  Atlantic coast of the United States. The company sells and leases hardware and project
+  services; it publishes no public API, developer program, or machine-readable contract.'
 url: https://raw.githubusercontent.com/api-evangelist/adbm-technologies/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +20,12 @@ created: '2026-09-07'
 modified: '2026-09-07'
 tags:
 - Company
+- Offshore Wind
+- Underwater Acoustics
+- Noise Mitigation
+- Marine Construction
+- Renewable Energy
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +33,35 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/adbm-technologies-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://adbmtech.com/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/adbm-technologies-llc
+x-enrichment:
+  date: '2026-09-07'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    adbmtech.com is a single-page marketing site (Home / Technology / Validation /
+    About / Contact) for injection-molded HDPE Helmholtz-resonator noise abatement
+    hardware that AdBm leases per offshore-wind pile-driving project; its only
+    interactive element is a Formspree contact form, and no developer, API, data or
+    documentation section exists anywhere on it or on any resolvable subdomain.
+  evidence:
+  - url: https://adbmtech.com/
+    status: 200
+  - url: https://adbmtech.com/openapi.json
+    status: 404
+  - url: https://adbmtech.com/llms.txt
+    status: 404
+  - url: https://adbmtech.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.adbmtech.com/graphql
+    status: 404
+  checked: '2026-09-07'

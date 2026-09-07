@@ -1,0 +1,139 @@
+generated: '2026-09-07'
+method: probed
+source: https://adbmtech.com/
+name: AdBm Technologies well-known discovery probe
+note: >-
+  Every named /.well-known/ path was probed on both hosts AdBm Technologies serves
+  (adbmtech.com and www.adbmtech.com) and every one returned HTTP 404 from the origin
+  with an Apache-style "404 Not Found" body. No discovery document is served, so NO
+  WellKnown or SecurityTxt pointer is emitted in apis.yml — this file records a
+  verified absence, not a presence. A third host, docs.adbmtech.com, exists in DNS as
+  a Google Workspace vanity alias (CNAME ghs.google.com) that fails TLS and 302s over
+  plain HTTP to drive.google.com/a/adbmtech.com; it is internal document storage, not
+  a documentation or API host, so its well-known paths are unreachable rather than
+  absent and are recorded as such.
+hosts:
+- host: adbmtech.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+- host: www.adbmtech.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+- host: docs.adbmtech.com
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 0
+    file: null
+    note: >-
+      TLS handshake fails (no certificate for this name); plain HTTP 302s to
+      drive.google.com/a/adbmtech.com. Google Workspace alias, not a docs host.
+x-contract-discovery:
+  checked: '2026-09-07'
+  note: >-
+    STEP 0b contract discovery run in full against every host this company is known to
+    serve. No OpenAPI, Swagger, GraphQL, MCP, AsyncAPI, OGC, gRPC or WSDL surface was
+    found, and no baseURL or servers[] host exists to probe beyond the marketing site.
+  probes:
+  - url: https://adbmtech.com/openapi.json
+    status: 404
+  - url: https://adbmtech.com/openapi.yaml
+    status: 404
+  - url: https://adbmtech.com/swagger.json
+    status: 404
+  - url: https://adbmtech.com/v1/openapi.json
+    status: 404
+  - url: https://adbmtech.com/api-docs
+    status: 404
+  - url: https://adbmtech.com/docs
+    status: 404
+  - url: https://adbmtech.com/redoc
+    status: 404
+  - url: https://adbmtech.com/graphql
+    status: 404
+  - url: https://adbmtech.com/mcp
+    status: 404
+  - url: https://adbmtech.com/apis.json
+    status: 404
+  - url: https://adbmtech.com/llms.txt
+    status: 404
+  - url: https://adbmtech.com/robots.txt
+    status: 404
+  - url: https://adbmtech.com/sitemap.xml
+    status: 404
+  - url: https://www.adbmtech.com/openapi.json
+    status: 404
+  - url: https://www.adbmtech.com/graphql
+    status: 404
+  - url: https://www.adbmtech.com/mcp
+    status: 404
+  - url: https://www.adbmtech.com/llms.txt
+    status: 404
+  subdomains_resolved:
+  - host: api.adbmtech.com
+    dns: NXDOMAIN
+  - host: app.adbmtech.com
+    dns: NXDOMAIN
+  - host: developer.adbmtech.com
+    dns: NXDOMAIN
+  - host: portal.adbmtech.com
+    dns: NXDOMAIN
+  - host: docs.adbmtech.com
+    dns: ghs.google.com (Google Workspace alias -> drive.google.com/a/adbmtech.com)
+  ogc:
+    probed: false
+    reason: >-
+      No evidence points at an OGC surface. AdBm publishes no geospatial endpoint,
+      no WMS/WFS/WCS/WMTS/CSW reference and no "OGC API" prose; per the contract,
+      blind path patterns are not probed.

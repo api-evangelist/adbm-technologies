@@ -64,5 +64,27 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AdBm Technologies is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+AdBm Technologies is an Austin, Texas acoustical engineering company that designs and
+manufactures near-pile underwater noise mitigation systems for offshore wind construction.
+Its injection-molded HDPE Helmholtz resonators, mounted on an expandable steel framework and
+paired with an integrated bubble curtain, absorb and disperse the low-frequency sound energy
+generated during pile driving so contractors can meet underwater noise regulations while
+protecting marine life. The technology grew out of more than a decade of research at the
+University of Texas at Austin Applied Research Laboratories and has been deployed on offshore
+wind projects from the North Sea to the Atlantic coast of the United States.
+
+- https://adbmtech.com/
+- https://www.linkedin.com/company/adbm-technologies-llc
+
+## Why this profile is thin
+
+AdBm sells and leases hardware and project services. It publishes no public API, developer
+program, SDK, or machine-readable contract. Contract discovery was run in full on 2026-09-07
+against every host the company serves — `adbmtech.com`, `www.adbmtech.com`, and the
+`docs.adbmtech.com` Google Workspace alias — covering OpenAPI/Swagger, GraphQL introspection,
+MCP `tools/list`, AsyncAPI, `llms.txt`, `apis.json` and the full `/.well-known/` path list.
+Every probe returned 404. The probe log is in
+[`well-known/adbm-technologies-well-known.yml`](well-known/adbm-technologies-well-known.yml);
+live TLS/DNS/email-authentication measurements are in
+[`security/adbm-technologies-domain-security.yml`](security/adbm-technologies-domain-security.yml).
+This is an honest zero, not a gap in our coverage.
