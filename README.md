@@ -64,27 +64,79 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AdBm Technologies is an Austin, Texas acoustical engineering company that designs and
-manufactures near-pile underwater noise mitigation systems for offshore wind construction.
-Its injection-molded HDPE Helmholtz resonators, mounted on an expandable steel framework and
-paired with an integrated bubble curtain, absorb and disperse the low-frequency sound energy
-generated during pile driving so contractors can meet underwater noise regulations while
-protecting marine life. The technology grew out of more than a decade of research at the
-University of Texas at Austin Applied Research Laboratories and has been deployed on offshore
-wind projects from the North Sea to the Atlantic coast of the United States.
+AdBm Technologies is an Austin, Texas acoustical engineering company that designs and manufactures near-pile underwater noise mitigation systems for offshore wind construction. Its injection-molded HDPE Helmholtz resonators, mounted on an expandable steel framework and paired with an integrated bubble curtain, absorb and disperse the low-frequency sound energy generated during pile driving so contractors can meet underwater noise regulations while protecting marine life. The technology grew out of more than a decade of research at the University of Texas at Austin Applied Research Laboratories and has been deployed on offshore wind projects from the North Sea to the Atlantic coast of the United States. The company sells and leases hardware and project services; it publishes no public API, developer program, or machine-readable contract.
 
-- https://adbmtech.com/
-- https://www.linkedin.com/company/adbm-technologies-llc
+**Areas:** Company · Offshore Wind · Underwater Acoustics · Noise Mitigation · Marine Construction · Renewable Energy · Hardware
 
-## Why this profile is thin
+## AdBm Technologies on APIs.io
 
-AdBm sells and leases hardware and project services. It publishes no public API, developer
-program, SDK, or machine-readable contract. Contract discovery was run in full on 2026-09-07
-against every host the company serves — `adbmtech.com`, `www.adbmtech.com`, and the
-`docs.adbmtech.com` Google Workspace alias — covering OpenAPI/Swagger, GraphQL introspection,
-MCP `tools/list`, AsyncAPI, `llms.txt`, `apis.json` and the full `/.well-known/` path list.
-Every probe returned 404. The probe log is in
-[`well-known/adbm-technologies-well-known.yml`](well-known/adbm-technologies-well-known.yml);
-live TLS/DNS/email-authentication measurements are in
-[`security/adbm-technologies-domain-security.yml`](security/adbm-technologies-domain-security.yml).
-This is an honest zero, not a gap in our coverage.
+Everything profiled for AdBm Technologies is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/adbm-technologies/](https://apis.io/providers/adbm-technologies/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Adbm Technologies Domain Security](https://apis.io/security/adbm-technologies/adbm-technologies-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://adbmtech.com/)
+
+## API Evangelist rating
+
+**Kin Score 3.2** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 44.6 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.9** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/adbm-technologies/](https://apis.io/providers/adbm-technologies/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AdBm Technologies: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/adbm-technologies/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
